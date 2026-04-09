@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z.S Computers | Authorised CSC Prasad Kheda</title>
+    
     <style>
         :root {
             --primary-blue: #002b5b;
@@ -11,7 +12,8 @@
             --main-bg: #eef2f7; 
             --text-dark: #333;
         }
-        body { 
+
+        body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
             background: linear-gradient(180deg, #d1d9e6 0%, #eef2f7 100%);
             background-attachment: fixed;
@@ -20,6 +22,7 @@
             line-height: 1.6;
             scroll-behavior: smooth;
         }
+
         header {
             background: #ffffff;
             color: var(--primary-blue);
@@ -30,10 +33,12 @@
             border-bottom: 4px solid var(--accent-orange);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
+
         .header-logo { height: 60px; width: auto; }
         .header-title { text-align: center; }
         .header-title h1 { margin: 0; font-size: 1.8rem; color: var(--primary-blue); text-transform: uppercase; }
         .header-title p { margin: 5px 0 0; font-size: 0.9rem; color: #d35400; font-weight: 700; }
+
         nav {
             background: var(--primary-blue);
             padding: 12px 0;
@@ -42,6 +47,7 @@
             top: 0;
             z-index: 1000;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
@@ -50,22 +56,27 @@
             font-size: 0.95rem;
             transition: color 0.3s;
         }
+
         nav a:hover { color: var(--accent-orange); }
+
         .container {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
         }
+
         .title-services { color: var(--primary-blue); text-align: center; margin-bottom: 30px; font-size: 2.2rem; text-transform: uppercase; }
         .title-shop { color: #e67e22; text-align: center; margin-bottom: 30px; font-size: 2.2rem; text-transform: uppercase; }
         .title-about { color: var(--primary-blue); margin-bottom: 20px; border-left: 5px solid var(--primary-blue); padding-left: 15px; }
         .title-contact { color: #c0392b; text-align: center; margin-bottom: 30px; font-size: 2.2rem; text-transform: uppercase; }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             margin-bottom: 60px;
         }
+
         .service-card {
             background: white;
             padding: 25px;
@@ -74,6 +85,7 @@
             transition: transform 0.3s ease;
             border-top: 5px solid var(--primary-blue);
         }
+
         .service-card:hover { transform: translateY(-5px); }
         .service-card h2 {
             font-size: 1.3rem;
@@ -82,8 +94,10 @@
             border-bottom: 1px solid #eee;
             padding-bottom: 10px;
         }
+
         .link-list { list-style: none; padding: 0; }
         .link-list li { margin: 12px 0; }
+
         .form-link {
             text-decoration: none;
             background: #f8f9fa;
@@ -95,17 +109,15 @@
             transition: 0.3s;
             font-weight: 500;
         }
+
         .form-link:hover { background: var(--primary-blue); color: white; }
-        /* Special highlight for the new Token link */
-        .token-link {
-            background: #fff3e0;
-            border: 1px solid var(--accent-orange);
-            font-weight: bold;
-        }
+        .token-link { background: #fff3e0; border: 1px solid var(--accent-orange); font-weight: bold; }
+
         .product-item { display: flex; align-items: center; margin-bottom: 15px; background: #fff; padding: 10px; border-radius: 10px; }
         .btn-buy { background: var(--accent-orange); color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
         .section-divider { height: 1px; background: rgba(0,0,0,0.1); margin: 40px 0; border: none; }
         .about-section { background: white; padding: 40px; border-radius: 15px; margin-bottom: 40px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -116,176 +128,21 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
             border-bottom: 5px solid #c0392b;
         }
+
         @media (max-width: 768px) {
             .contact-grid { grid-template-columns: 1fr; }
             header { flex-direction: column; text-align: center; gap: 10px; }
         }
     </style>
-</head>
-<body>
 
-<header>
-    <img src="https://digitalseva.csc.gov.in/assets1/images/csc-logo.svg" alt="CSC Logo" class="header-logo">
-    <div class="header-title">
-        <h1>Z.S COMPUTERS</h1>
-        <p>Prasad Kheda, Unnao, Uttar Pradesh | CSC Authorised Centre</p>
-    </div>
-    <img src="https://digitalseva.csc.gov.in/assets1/webpimage/digital-india.webp" alt="CSC Logo" class="header-logo">
-</header>
+    <script>
+        // Disable Right Click
+        document.addEventListener('contextmenu', event => event.preventDefault());
 
-<nav>
-    <a href="#services">Digital Services</a>
-    <a href="#shop">Electronics Shop</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-    <h2 class="title-services" id="services">Our Digital Services</h2>
-    <div class="grid-container">
-        <div class="service-card">
-            <h2>🪪 Identity & Tracking</h2>
-            <ul class="link-list">
-                <li><a href="https://script.google.com/macros/s/AKfycbz_nlhj2OI_Z52E8AAs5zj2FBeBdtI6Y8dHrBD2BR1zRpTiO56zCe4vqW7zqYrWrG1s/exec" target="_blank" class="form-link token-link">🎫 Token Generation and Tracking</a></li>
-                <li><a href="#" class="form-link">New PAN Card Application</a></li>
-                <li><a href="#" class="form-link">Ration Card New/Correction</a></li>
-                <li><a href="#" class="form-link">Voter ID Registration</a></li>
-                <li><a href="#" class="form-link">Aadhaar Services</a></li>
-            </ul>
-        </div>
-
-        <div class="service-card" style="border-top-color: #28a745;">
-            <h2>✈️ Travel & Transport</h2>
-            <ul class="link-list">
-                <li><a href="#" class="form-link">Train Ticket (IRCTC)</a></li>
-                <li><a href="#" class="form-link">Flight Bookings</a></li>
-                <li><a href="#" class="form-link">Driving License Apply</a></li>
-                <li><a href="#" class="form-link">Vehicle Insurance</a></li>
-            </ul>
-        </div>
-
-        <div class="service-card" style="border-top-color: #e83e8c;">
-            <h2>🎓 Welfare & Pension</h2>
-            <ul class="link-list">
-                <li><a href="#" class="form-link">UP Scholarship Form</a></li>
-                <li><a href="#" class="form-link">Old Age Pension</a></li>
-                <li><a href="#" class="form-link">Widow / Divyang Pension</a></li>
-                <li><a href="#" class="form-link">Caste/Income/Domicile</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <hr class="section-divider">
-
-    <h2 class="title-shop" id="shop">Electronics Store</h2>
-    <div class="grid-container">
-        <div class="service-card" style="border-top-color: var(--accent-orange);">
-            <div class="product-item">
-                <img src="https://cdn-icons-png.flaticon.com/128/644/644458.png" width="50" style="margin-right:15px;">
-                <div>
-                    <strong>Smart Phone X1</strong><br>
-                    <span>₹15,000</span>
-                </div>
-            </div>
-            <button onclick="addToCart('Smart Phone X1', 15000)" class="btn-buy" style="width:100%">Add to Cart</button>
-        </div>
-
-        <div class="service-card" style="border-top-color: var(--accent-orange);">
-            <div class="product-item">
-                <img src="https://cdn-icons-png.flaticon.com/128/27/27705.png" width="50" style="margin-right:15px;">
-                <div>
-                    <strong>Pro Earbuds</strong><br>
-                    <span>₹2,500</span>
-                </div>
-            </div>
-            <button onclick="addToCart('Pro Earbuds', 2500)" class="btn-buy" style="width:100%">Add to Cart</button>
-        </div>
-
-        <div class="service-card" id="cart-box" style="display:none; background: #fff9e6; border: 2px solid var(--accent-orange); position: sticky; bottom: 20px; z-index: 999;">
-            <h3 style="margin-top:0;">🛒 Your Shopping Cart</h3>
-            <div id="cart-items-list" style="font-size: 0.9rem; margin-bottom: 10px;"></div>
-            <p><strong>Total Amount: ₹<span id="total-price">0</span></strong></p>
-            <button onclick="checkoutViaWhatsApp()" class="btn-buy" style="background: #25D366; width:100%;">
-                Order via WhatsApp 💬
-            </button>
-            <button onclick="clearCart()" style="background:none; border:none; color:red; cursor:pointer; font-size:0.8rem; margin-top:10px;">Clear Cart</button>
-        </div>
-    </div>
-
-    <hr class="section-divider">
-
-    <div class="about-section" id="about">
-        <h2 class="title-about">About Z.S Computers</h2>
-        <p>Serving <strong>Prasad Kheda, Unnao</strong> for over 4 years. We provide 100% secure government form filling and high-quality gadgets. Our local delivery is famous for being <strong>Same-Day</strong> and reliable.</p>
-    </div>
-
-    <h2 class="title-contact" id="contact">Contact & Express Delivery</h2>
-    <div class="contact-grid">
-        <div>
-            <h3 style="color:var(--primary-blue)">Visit Our Office</h3>
-            <p>📍 Prasad Kheda, Unnao, Uttar Pradesh</p>
-            <p>📞 <strong>Phone:</strong> +91 63889 44545</p>
-            <p>📧 <strong>Email:</strong> zsbusinesspoint@gmail.com</p>
-            <hr style="opacity: 0.1;">
-            <a href="https://wa.me/916388944545" style="background:#25D366; color:white; padding:12px 20px; text-decoration:none; border-radius:8px; display:inline-block; font-weight: bold;">Chat on WhatsApp</a>
-        </div>
-        <div>
-            <h3 style="color:var(--primary-blue)">Express Order Form</h3>
-            <form>
-                <input type="text" placeholder="Your Name" style="width:100%; padding:12px; margin-bottom:10px; border:1px solid #ddd; border-radius:5px; box-sizing: border-box;">
-                <textarea placeholder="Service Required / Delivery Address" style="width:100%; padding:12px; margin-bottom:10px; border:1px solid #ddd; border-radius:5px; box-sizing: border-box; height: 80px;"></textarea>
-                <button type="submit" class="btn-buy" style="width:100%; padding:12px; font-size: 1rem;">Submit Order Request</button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<footer style="text-align:center; padding:40px; background: #001a38; color:#fff; font-size:0.9rem; margin-top: 50px;">
-    &copy; 2026 Z.S Computers. All Rights Reserved. <br>
-    <span style="opacity: 0.7;">Created By : Irshad Ali | Prasad Kheda, Unnao</span>
-</footer>
-
-<script>
-    let cart = [];
-
-    function addToCart(item, price) {
-        cart.push({ name: item, price: price });
-        updateCartUI();
-        alert(item + " added to cart!");
-    }
-
-    function updateCartUI() {
-        const cartBox = document.getElementById('cart-box');
-        const list = document.getElementById('cart-items-list');
-        const totalSpan = document.getElementById('total-price');
-        
-        if (cart.length > 0) {
-            cartBox.style.display = 'block';
-            list.innerHTML = cart.map(i => `<div>${i.name} - ₹${i.price}</div>`).join('');
-            const total = cart.reduce((sum, item) => sum + item.price, 0);
-            totalSpan.innerText = total;
-        } else {
-            cartBox.style.display = 'none';
-        }
-    }
-
-    function clearCart() {
-        cart = [];
-        updateCartUI();
-    }
-
-    function checkoutViaWhatsApp() {
-        if (cart.length === 0) return;
-        let message = "Hello Z.S Computers! I want to order:%0A";
-        let total = 0;
-        cart.forEach((item, index) => {
-            message += `${index + 1}. ${item.name} (₹${item.price})%0A`;
-            total += item.price;
-        });
-        message += `%0ATotal Amount: ₹${total}%0APlease confirm my order.`;
-        window.open(`https://wa.me/916388944545?text=${message}`, '_blank');
-    }
-</script>
-
-</body>
-</html>
+        // Disable Keyboard Shortcuts
+        document.onkeydown = function(e) {
+            if (
+                e.keyCode == 123 || // F12
+                (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) || // Ctrl+Shift+I, J, C
+                (e.ctrlKey && e.keyCode == 85) || // Ctrl+U (View Source)
+                (e.
